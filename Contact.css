@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    padding: 15px 30px;
+    background-color: #E2D2F9;
+    width: 100%;
+}
+
+/* heading */
+.close{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+.fa-square-xmark{
+    color:#03192f;
+}
+
+/* body {
+    background: white;
+} */
+
+.heading .sub {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+}
+
+.sub {
+    font-size: 60px;
+    font-weight: 700;
+    color: #c90f5d;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: #E2D2F9;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: #03192f;
+        /* margin-bottom: 20px; */
+    }
+
+    30%{
+        letter-spacing: 25px;
+        /* margin-bottom: 20px; */
+    }
+
+    85%{
+        letter-spacing: 8px;
+        /* margin-bottom: 20px; */
+    }
+}
+
+/* LINE */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.line {
+    width: 24%;
+}
+
+.icon-container {
+    margin: 0 25px;
+}
+
+.icon-container i {
+  font-size: 25px;
+  color: #317874;
+}
+
+/*  */
+.about{ 
+margin: 0 auto;
+width: 75%;
+padding: 2% 5%;
+background-color: #03192f;
+}
+
+.mainn{
+    width: 100%;
+    height: inherit;
+    display: flex;
+}
+
+.mainn >.one{
+    width: 50%;
+    height: inherit;
+    /* background-color: #f2f2f2; */
+    /* border: 1px solid white; */
+
+}
+
+/* Div One */
+.one{
+    padding: 20px;
+}
+
+.one >h4{
+    padding: 10px;
+    color: #c90f5d;
+}
+
+.one >p{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.one >p >i{
+    color: #E2D2F9;
+    padding: 0 5px;
+}
+
+.one >p >span{
+    color: #E2D2F9;
+}
+
+/* Div Two */
+.two{
+    width: 100%;
+    height: inherit;
+    padding-left: 25px;
+}
+
+.feel{
+    font-size: 20px;
+    line-height: 30px;
+    color: #c90f5d;
+}
+
+p{
+    width: 70%;
+    font-size: 15px;
+    color: #E2D2F9;
+    width: 100%;
+    word-spacing: 4px;
+}
+
+/* Form */
+
+.Form-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #c90f5d;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Button */
+.SendButton {
+    --color: #c90f5d;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 12px 100px;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+
+   .fa-paper-plane{
+    padding: 0 10px ;
+   }
+   
+   .SendButton::before, .SendButton::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .SendButton::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .SendButton::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .SendButton:hover::before, .SendButton:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .SendButton:hover {
+    color: white;
+   }
+   
+   .SendButton:active {
+    filter: brightness(.8);
+   }
+   
+
+
+/* Social */
+.parent {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    /* margin: 0 8px; */
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px #c90f5d;
+  }
+  
+ button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
+  

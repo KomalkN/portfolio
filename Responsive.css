@@ -1,0 +1,32 @@
+/* Heading */
+@media screen and (max-width: 400px) {
+    .h1 {
+        font-size: 40px;
+    }
+}
+
+/* LINE */
+@media screen and (max-width: 450px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        margin: 10px 0;
+    }
+}
+
+/* Button */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Work */
