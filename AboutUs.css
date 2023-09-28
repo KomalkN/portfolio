@@ -236,11 +236,93 @@ span{
 /* Skill */
 .skill{
     width: 100%;
-    height: 400px;
+    height: inherit;
     margin: 0 auto;
     width: 75%;
     border: 1px solid black;
     padding: 2% 5%;
     text-align: justify;
     background-color: #03192f;
+}
+
+div {
+	box-sizing: border-box;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+}
+.icetab {
+	border: 2px solid #c90f5d;
+	margin: 0px;	
+    color: #E2D2F9;
+	cursor: pointer;
+    font-family: 'Croissant One', cursive;
+}
+.icetab:last-child {
+	border-right: 2px solid #c90f5d;	
+}
+
+#icetab-content {
+  width: 100%;
+  /* height: inherit; */
+  margin-left: 5%;
+	overflow: hidden;
+	position: relative;
+	border-top: 2px solid #c90f5d;
+}
+
+
+.tabcontent {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: white;
+	width: 100%;
+    height: 450px;
+	border-top: 0px;
+	border: 1px solid #c90f5d;
+	border-top: 0px;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+.tabcontent >h1{
+    background-color: #c90f5d;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Croissant One', cursive;
+}
+
+.tabcontent:first-child {
+	position: relative;	
+}
+.tabcontent.tab-active {
+	border-top: 0px;
+	display: block;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+
+#icetab-container{
+  width: 50%;
+}
+
+.codepen-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  height: inherit;
+  margin: 20px 0;
+}
+
+.icetab {
+  margin-top: 8%;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.current-tab { 
+	background: #c90f5d;
 }
