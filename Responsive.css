@@ -29,4 +29,26 @@
     }
 }
 
+/* about>btn */
+
+@media (max-width: 850px){
+    .bttnn{
+        width: 100%;
+    }
+    .dr{
+        width: 100%;
+        display: block;
+
+        margin: 0 auto;
+    }
+    .MyBlog{
+        flex-direction: row; 
+        display: block;
+        margin: 10% auto;
+        width: 100%;
+    }
+    .bttnn >a{
+        text-decoration: none;
+    }
+}
 /* Work */

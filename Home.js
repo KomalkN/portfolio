@@ -45,22 +45,23 @@ const getHoverDirection = function (event) {
     }
     });
 
-    // About-Skill
-    var tabs = document.getElementById('icetab-container').children;
-    var tabcontents = document.getElementById('icetab-content').children;
+// About-Skill
+let tabs = document.querySelectorAll(".tabs h3");
+// console.log('tabs', tabs);
+let tabContents = document.querySelectorAll(".tab-content div");
+// console.log('tabContents', tabContents);
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContents.forEach((content) => {
+      content.classList.remove("active");
+    });
     
-    var myFunction = function() {
-      var tabchange = this.mynum;
-      for(var int=0;int<tabcontents.length;int++){
-        tabcontents[int].className = ' tabcontent';
-        tabs[int].className = ' icetab';
-      }
-      tabcontents[tabchange].classList.add('tab-active');
-      this.classList.add('current-tab');
-    }	
-    
-    
-    for(var index=0;index<tabs.length;index++){
-      tabs[index].mynum=index;
-      tabs[index].addEventListener('click', myFunction, false);
-    }
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tabContents[index].classList.add("active");
+    tabs[index].classList.add("active");
+  });
+});
+

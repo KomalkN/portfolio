@@ -9,18 +9,14 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* background-color: #e2d2f9; */
   background-color: #d6d7f1;
-
 }
 
 .pic{
   width: 50%;
-  /* border: 1px solid ; */
   height: inherit;
   padding: 25px 0;
 }
-
 
 .div-container {
   height: inherit;
@@ -37,7 +33,6 @@
 }
 
 .innerDiv {
-  /* background-color: #efe9e9; */
   background-color: #03192f;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
